@@ -1,5 +1,14 @@
 package com.unifranzhk.practicascasa.domain;
 
-public class UsuarioAdmin {
-    .gitkeep
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Getter
+@Setter
+public class UsuarioAdmin extends Usuario{
+    public UsuarioAdmin(){
+        setRol("ADMIN");
+    }
 }
